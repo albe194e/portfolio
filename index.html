@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Software developer portfolio of Albert Bek Jørgensen."
+    />
+    <title>Portfolio — Selected Projects</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#projects">Skip to content</a>
+
+    <header class="site-header">
+      <p>Portfolio: Albert Bek Jørgensen</p>
+    </header>
+
+    <div class="page-layout">
+      <main id="projects" class="projects">
+        <section class="introduction" aria-labelledby="introduction-title">
+          <h1 id="introduction-title">Software Developer</h1>
+          <p>
+            I enjoy building software systems from scratch and taking ownership
+            of the technical decisions. My experience includes web platforms,
+            mobile applications, real-time systems, API integrations, and
+            internal business tools.
+          </p>
+          <div class="introduction__links" aria-label="Profile links">
+            <a
+              href="https://github.com/albe194e"
+              target="_blank"
+              rel="noreferrer"
+              >GitHub</a
+            >
+            <a
+              href="https://www.linkedin.com/in/albert-bek-j%C3%B8rgensen-5a4710181/"
+              target="_blank"
+              rel="noreferrer"
+              >LinkedIn</a
+            >
+            <a href="CV-albert.pdf" target="_blank" rel="noreferrer">CV</a>
+          </div>
+        </section>
+
+        <article id="challenger" class="project" data-nav-section>
+          <header class="project__header">
+            <h1>1: Challenger</h1>
+          </header>
+
+          <div class="project__gallery" aria-label="Challenger project images">
+            <img
+              class="project__image"
+              src="projects/challenger/explore.png"
+              alt="Explore screen in the Challenger app"
+              width="980"
+              height="2083"
+            />
+            <img
+              class="project__image"
+              src="projects/challenger/thehub.png"
+              alt="The Hub screen in the Challenger app"
+              width="995"
+              height="2103"
+              loading="lazy"
+            />
+            <img
+              class="project__image"
+              src="projects/challenger/map.png"
+              alt="Map screen showing events and sports facilities in the Challenger app"
+              width="976"
+              height="2068"
+              loading="lazy"
+            />
+            <img
+              class="project__image"
+              src="projects/challenger/profile.png"
+              alt="Profile screen in the Challenger app"
+              width="980"
+              height="2087"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="project__details">
+            <section aria-labelledby="challenger-about">
+              <h3 id="challenger-about">About the project</h3>
+              <p>
+                Challenger is a production mobile application for finding other
+                people and organizing sports activities.
+              </p>
+              <ul class="feature-list">
+                <li>Events and invitations</li>
+                <li>Map overview of activities and sports facilities</li>
+                <li>Real-time chat</li>
+                <li>User profiles</li>
+                <li>Internal administration and analytics dashboard</li>
+              </ul>
+              <p>
+                It was built as part of my bachelor's project. The first
+                production version was developed in around 1.5 months.
+              </p>
+              <p>
+                My work covered backend architecture and APIs, PostgreSQL data
+                modelling, real-time WebSocket communication, deployment and
+                infrastructure, the internal administration platform, and parts
+                of the React Native application.
+              </p>
+              <p>
+                Challenger was co-developed with
+                <a
+                  href="https://github.com/DanielStarckLorenzen"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Daniel Lorenzen</a
+                >.
+              </p>
+            </section>
+
+            <section aria-labelledby="challenger-stack">
+              <h3 id="challenger-stack">Tech stack</h3>
+              <ul class="tech-list" aria-label="Technologies used">
+                <li>Go</li>
+                <li>PostgreSQL</li>
+                <li>React Native</li>
+                <li>WebSockets</li>
+              </ul>
+            </section>
+          </div>
+        </article>
+
+        <article
+          id="haddle"
+          class="project project--text-only"
+          data-nav-section
+        >
+          <header class="project__header">
+            <h1>2: Haddle</h1>
+          </header>
+
+          <div class="project__details">
+            <section aria-labelledby="haddle-about">
+              <h3 id="haddle-about">About the project</h3>
+              <p>
+                Haddle is a local-first messenger application intended for both
+                desktop and mobile use. Messages are encrypted and stored
+                locally rather than centrally. A relay server mainly forwards
+                communication between clients without permanently storing
+                message data.
+              </p>
+              <ul class="feature-list">
+                <li>Friend requests via QR codes</li>
+                <li>
+                  Real-time communication through a non-persistent relay server
+                </li>
+              </ul>
+              <p>
+                The project involved working through real-time communication,
+                local storage, synchronization, identity, and communication
+                between peers.
+              </p>
+              <p>
+                <a
+                  href="https://github.com/Haddle-org/Haddle"
+                  target="_blank"
+                  rel="noreferrer"
+                  >View Haddle on GitHub</a
+                >.
+              </p>
+            </section>
+
+            <section aria-labelledby="haddle-stack">
+              <h3 id="haddle-stack">Tech stack</h3>
+              <ul class="tech-list" aria-label="Technologies used">
+                <li>Go</li>
+                <li>Flutter</li>
+              </ul>
+            </section>
+          </div>
+        </article>
+
+        <article
+          id="runic-http"
+          class="project project--text-only"
+          data-nav-section
+        >
+          <header class="project__header">
+            <h1>3: RunicHTTP</h1>
+          </header>
+
+          <div class="project__details">
+            <section aria-labelledby="runic-http-about">
+              <h3 id="runic-http-about">About the project</h3>
+              <p>
+                A minimal HTTP server and framework written from scratch in
+                Odin. It supports static file serving and basic GET requests. I
+                built it primarily to learn Odin and gain a deeper understanding
+                of HTTP and web server fundamentals.
+              </p>
+              <p>
+                <a
+                  href="https://github.com/albe194e/RunicHTTP"
+                  target="_blank"
+                  rel="noreferrer"
+                  >RunicHTTP on GitHub</a
+                >.
+              </p>
+            </section>
+
+            <section aria-labelledby="runic-http-stack">
+              <h3 id="runic-http-stack">Tech stack</h3>
+              <ul class="tech-list" aria-label="Technologies used">
+                <li>Odin</li>
+              </ul>
+            </section>
+          </div>
+        </article>
+
+        <section
+          id="professional-experience"
+          class="project professional-experience"
+          aria-labelledby="professional-experience-title"
+          data-nav-section
+        >
+          <header class="project__header">
+            <h1 id="professional-experience-title">Professional experience</h1>
+          </header>
+
+          <div class="project__details">
+            <section
+              class="experience-groups"
+              aria-label="Areas of professional experience"
+            >
+              <article class="experience-item">
+                <h3>API integrations</h3>
+                <p>
+                  Built and maintained integrations between a logistics
+                  platform and external services.
+                </p>
+              </article>
+              <article class="experience-item">
+                <h3>Internal analytics platform</h3>
+                <p>
+                  Developed dashboards and internal tools for analysing
+                  operational and business data.
+                </p>
+              </article>
+              <article class="experience-item">
+                <h3>Employee time-tracking platform</h3>
+                <p>
+                  Built an internal web platform for tracking time across tasks
+                  and projects.
+                </p>
+              </article>
+              <article class="experience-item">
+                <h3>Data import automation</h3>
+                <p>
+                  Automated ingestion and processing of Excel and CSV-based
+                  data.
+                </p>
+              </article>
+              <article class="experience-item">
+                <h3>Shopify / storefront integrations</h3>
+                <p>
+                  Worked with Shopify storefronts and related API integrations.
+                </p>
+              </article>
+            </section>
+          </div>
+        </section>
+
+        <section
+          id="areas"
+          class="areas"
+          aria-labelledby="areas-title"
+          data-nav-section
+        >
+          <h2 id="areas-title">Areas I've worked with</h2>
+          <ul class="areas-list">
+            <li>API integrations</li>
+            <li>Web platforms</li>
+            <li>Mobile applications</li>
+            <li>Desktop applications</li>
+            <li>Real-time systems</li>
+            <li>Internal business tools</li>
+            <li>Dashboards &amp; analytics</li>
+            <li>Data import &amp; automation</li>
+            <li>Backend architecture</li>
+            <li>Cloud deployment</li>
+          </ul>
+        </section>
+      </main>
+
+      <aside class="project-nav" aria-label="Project navigation">
+        <nav>
+          <ol>
+            <li>
+              <a href="#challenger" class="is-active" aria-current="true">
+                1: Challenger
+              </a>
+            </li>
+            <li><a href="#haddle">2: Haddle</a></li>
+            <li><a href="#runic-http">3: RunicHTTP</a></li>
+            <li>
+              <a href="#professional-experience">Professional experience</a>
+            </li>
+            <li><a href="#areas">Areas I've worked with</a></li>
+          </ol>
+        </nav>
+      </aside>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
